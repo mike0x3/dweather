@@ -1,0 +1,228 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block 'title' %}DWeather{% endblock %}
+{% block 'content' %}
+				<section class="cities">
+					<article class="city">
+						<img src="/static/main/images/{{ stato_torino }}" alt="">
+						<h2 class="titleh2">Milano</h2>
+						<h2 class="temperature">{{ temp_milano }}°</h2>
+					</article>
+					<article class="city">
+						<img src="/static/main/images/{{ stato_torino }}" alt="">
+						<h2 class="titleh2">Roma</h2>
+						<h2 class="temperature">{{ temp_roma }}°</h2>
+					</article>
+					<article class="city">
+						<img src="/static/main/images/{{ stato_torino }}" alt="">
+						<h2 class="titleh2">Torino</h2>
+						<h2 class="temperature">{{ temp_torino }}°</h2>
+					</article>
+					</section>
+					<section class="weather">
+						<article class="country">
+							<div class="article-header">
+								<h2 class="titleh2">Le citta piu cercate</h2>
+							</div>
+							<div class="article-container">
+								<div class="list">
+									<ul>
+										<li class="city-order"><a href="">Milano</a></li>
+										<li class="city-order"><a href="">San Calogero</a></li>
+										<li class="city-order"><a href="">Roma</a></li>
+										<li class="city-order"><a href="">Torino</a></li>
+									</ul>
+								</div>
+								<div class="list">
+									<ul>
+										<li class="city-order"><a href="">Catania</a></li>
+										<li class="city-order"><a href="">San Calogero</a></li>
+										<li class="city-order"><a href="">San Calogero</a></li>
+										<li class="city-order"><a href="">Palermo</a></li>
+									</ul>
+								</div>
+								<div class="list">
+									<ul>
+										<li class="city-order"><a href="">Milano</a></li>
+										<li class="city-order"><a href="">Roma</a></li>
+										<li class="city-order"><a href="">Torino</a></li>
+										<li class="city-order"><a href="">Catania</a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						
+						<article class="country">
+							<div class="article-header">
+								<h2 class="titleh2">Tempo a {{ location }}</h2>
+							</div>
+							<div class="article-content local-weather">
+								
+								<h4>Martedi, 13 aprile</h4>
+								<img src="/static/main/images/{{ stato_location }}" alt="">
+								<h2 class="temperature">{{ temp_location }}°</h2>
+							</div>
+						</article>
+						<article class="country">
+							<div class="article-header">
+								<h2 class="titleh2">Previsioni per la settimana</h2>
+							</div>
+							<div class="article-container">
+								
+									<div class="list">
+										<h3>Giorno</h3>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>Domani</h5>
+											<h6>Mer. 14 aprile</h6>
+										</div>
+									</div>
+									<div class="list">
+										<h3>Temperatura</h3>
+										<hr>
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>14° 10°</h5>
+										</div>
+									</div>
+									<div class="list">
+										<h3>Pioggia</h3>
+										<hr>
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+										<hr class="hr-temp">
+										<div class="line">
+											<h5>0%</h5>
+										</div>
+									</div>
+									<div class="list">
+										<h3>Vento</h3>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+										<hr>
+										<div class="line">
+											<h5>5 m/s</h5>
+										</div>
+									</div>
+								
+							</div>
+						</article>
+						
+				</section>
+				<section class="weather2">
+					<article class="country float-right">
+							<div class="article-header">
+								<h2 class="titleh2">Notizie sul meteo</h2>
+							</div>
+							<div class="article-container">
+								<div class="news">
+									<div class="news-container">
+										<h3 class="news-title">Temporale a zona Milano</h3>
+										<p><img src="{% static 'main/images/temporale.jpg' %}" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at felis efficitur, pretium mi id, egestas urna. Etiam eu nibh porta, dignissim turpis id, finibus eros. Aenean posuere molestie sapien id tincidunt. Morbi in diam quam. Quisque blandit maximus sodales. Ut et egestas ex. Nullam bibendum eros non orci aliquam, ut auctor sem posuere. Pellentesque eleifend arcu quis ligula tristique pretium. Cras libero ipsum, venenatis eu vestibulum sed, consectetur a odio. <a href="#">Leggi tutto</a> </p>
+									</div>
+									<hr>
+									<div class="news-container">
+										<h3 class="news-title">Anche questa settimana buon tempo a Roma</h3>
+										<p><img src="{% static 'main/images/buontempo.jpg' %}" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at felis efficitur, pretium mi id, egestas urna. Etiam eu nibh porta, dignissim turpis id, finibus eros. Aenean posuere molestie sapien id tincidunt. Morbi in diam quam. Quisque blandit maximus sodales. Ut et egestas ex. Nullam bibendum eros non orci aliquam, ut auctor sem posuere. Pellentesque eleifend arcu quis ligula tristique pretium. Cras libero ipsum, venenatis eu vestibulum sed, consectetur a odio. <a href="#">Leggi tutto</a> </p>
+									</div>
+								</div>
+							</div>
+						</article>
+				</section>
+{% endblock %}

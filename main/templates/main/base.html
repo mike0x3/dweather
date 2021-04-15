@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'main/stylesheet/style.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<title>{% block 'title' %}{% endblock %}</title>
+</head>
+<body>
+	<div class="container">
+		<div class="window">
+			<header>
+				<div class="logo news-titleq">
+					<a href="{% url 'index' %}"><h1>DWeather</h1></a>
+				</div>
+					<div class="search">
+						<form action="{% url 'city' %}">
+							{% csrf_token %}
+							{{ form.city }}
+							{% if form.is_hidden %}
+  								<h2>dio boia</h2>
+							{% endif %}
+							<button type="submit"><img class="search-image" width="30" src="{% static 'main/images/search.svg' %}" 	alt=""></button>
+						</form>
+					</div>
+				<div class="right-header">
+					
+				</div>
+			</header>
+			<div class="window-content">
+				{% block 'content' %}
+				{% endblock %}
+			</div>
+			<footer>
+				<h4>©Copyright 2021 all right reserved <a href="#">mike</a></h4>
+			</footer>
+		</div>	
+		<div class="circle1"></div>
+		<div class="circle2"></div>	
+	</div>
+</body>
+</html>
